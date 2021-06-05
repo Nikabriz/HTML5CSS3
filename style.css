@@ -70,4 +70,41 @@
 }
 
 /* end header*/
+/*main*/
+.content-about {
+  width: 100%;
+  padding: 45px 50px 50px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-about-block {
+  padding: 0;
+  width: 646px;
+}
+
+.content-title {
+  margin: 0 0 17px 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.text {
+  margin: 0 0 11px 0;
+  font-size: 16px;
+}
+
+.about-video {
+  display: block;
+  background-color: #445161;
+  color: white;
+  float: right;
+}
 /*# sourceMappingURL=style.css.map */
