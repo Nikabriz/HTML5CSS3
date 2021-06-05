@@ -1,0 +1,70 @@
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+                    /* header */
+
+.page-header {
+    width: 100%;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    background-color: #445161;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header-block::after {
+    max-width: 400px;
+    width: 100%;
+    float: left;
+}
+
+.page-header-title {
+    margin: 0 0 40px 0;
+    font-size: 65px;
+    font-weight: 400;
+}
+
+.page-header-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.page-header-list-item {
+    margin: 0 0 10px 0;
+    padding: 0 0 0 21px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    position: relative;
+}
+
+.page-header-list-item::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 13px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-image: url('./img/Vector.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.page-header-pic {
+    display: block;
+    width: 472px;
+    height: 217px;
+    background-color: #fff;
+    color: #000;
+    float: right;
+}
+
+/* end header*/
+
