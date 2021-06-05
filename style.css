@@ -93,21 +93,18 @@
 .content-title {
   margin: 0 0 17px 0;
   font-size: 30px;
+  line-height: 36px;
   font-weight: 400;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: #445161;
 }
 
 .text {
   margin: 0 0 11px 0;
   font-size: 16px;
+  line-height: 24px;
 }
 
-.text:nth-child(3) {
+.text:last-child {
   margin: 0;
 }
 
@@ -116,5 +113,73 @@
   background-color: #445161;
   color: white;
   float: right;
+}
+
+.pluses {
+  width: 100%;
+  padding: 25px 50px 50px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pluses-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
+  margin: 0 0 30px 0;
+}
+
+.pluses-list-wrp {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pluses-list {
+  width: 100%;
+  min-height: 30px;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pluses-list-item {
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  outline: none;
+  position: relative;
+}
+
+.pluses-list-item:-webkit-details-marker {
+  display: none;
+}
+
+.pluses-list-item::before {
+  content: "+";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #445161;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  position: absolute;
+  top: 5px;
+  left: -30px;
 }
 /*# sourceMappingURL=style.css.map */
