@@ -192,7 +192,7 @@
 }
 
 .block-site {
-  padding: 25px 42px 50px 50px;
+  padding: 25px 42px 30px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -229,7 +229,7 @@
 
 .screenshots-photo {
   display: block;
-  margin: 0 15px 0 0;
+  margin: 0 15px 0 30px;
   background-color: #445161;
   color: white;
 }
@@ -250,7 +250,7 @@
   margin: 0 0 0 0;
 }
 
-.texting {
+.scrinshots-text {
   margin: 0 0 11px 0;
   font-size: 16px;
   line-height: 24px;
@@ -259,21 +259,31 @@
 
 /*reviews*/
 .reviews {
-  width: 100%;
-  padding: 25px 50px 42px 50px;
+  padding: 25px 50px 20px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #F5F5F5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+.reviews:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
 }
 
 .rev {
   margin: 0 0 29px 0;
   font-weight: 400;
+}
+
+.reviews-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .reviews-img {
@@ -284,6 +294,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 15px 0 0;
   position: relative;
 }
 
@@ -293,11 +304,22 @@
   left: -30px;
 }
 
+.reviews-item-txt {
+  width: 50%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reviews-item-txt p {
+  margin: 0 0 22px 0;
+}
+
 .reviews-text {
-  width: 483px;
+  width: 453px;
   height: 121px;
   margin-left: 50px;
-  background-color: #ccc;
+  background-color: #EBEBEB;
   border-radius: 5px;
   position: relative;
   font-family: Roboto;
@@ -306,13 +328,13 @@
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  padding: 16px 10px 20px 15px;
+  padding: 0 0 0 15px;
 }
 
 .reviews-text::before {
   content: "";
   border: 15px solid transparent;
-  border-right: 15px solid #ccc;
+  border-right: 15px solid #EBEBEB;
   position: absolute;
   top: 20px;
   left: -30px;

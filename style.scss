@@ -182,7 +182,7 @@
 }
 
 .block-site {
-  padding   : 25px 42px 50px 50px;
+  padding   : 25px 42px 30px 20px;
   box-sizing: border-box
 }
 
@@ -207,7 +207,7 @@
 
 .screenshots-photo {
   display         : block;
-  margin          : 0 15px 0 0;
+  margin          : 0 15px 0 30px;
   background-color: #445161;
   color           : white;
 }
@@ -227,7 +227,7 @@
   margin: 0 0 0 0;
 }
 
-.texting {
+.scrinshots-text {
   margin     : 0 0 11px 0;
   font-size  : 16px;
   line-height: 24px;
@@ -237,12 +237,16 @@
 /*reviews*/
 
 .reviews {
-  width           : 100%;
-  padding         : 25px 50px 42px 50px;
+  padding         : 25px 50px 20px 50px;
   box-sizing      : border-box;
   background-color: #F5F5F5;
-  display         : flex;
-  flex-wrap       : wrap;
+}
+
+.reviews:after {
+  content: "";
+  display: block;
+  width  : 100%;
+  clear  : both;
 }
 
 .rev {
@@ -250,14 +254,21 @@
   font-weight: 400;
 }
 
+.reviews-about {
+  display        : flex;
+  justify-content: space-between;
+}
+
 .reviews-img {
   width           : 66px;
   height          : 66px;
   background-color: #445161;
-  ;
-  border-radius: 50%;
-  display      : flex;
-  position     : relative;
+  border-radius   : 50%;
+  display         : flex;
+
+  margin  : 0 15px 0 0;
+  position: relative;
+
 }
 
 .reviews-img::before {
@@ -266,29 +277,41 @@
   left    : -30px;
 }
 
+.reviews-item-txt {
+  width     : 50%;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+.reviews-item-txt p {
+  margin: 0 0 22px 0;
+}
+
 .reviews-text {
-  width           : 483px;
+  width           : 453px;
   height          : 121px;
   margin-left     : 50px;
-  background-color: #ccc;
-  border-radius   : 5px;
-  position        : relative;
-  font-family     : Roboto;
-  font-style      : italic;
-  font-weight     : normal;
-  font-size       : 14px;
-  line-height     : 18px;
-  color           : #000000;
-  padding         : 16px 10px 20px 15px;
+  background-color: #EBEBEB;
+  ;
+  border-radius: 5px;
+  position     : relative;
+  font-family  : Roboto;
+  font-style   : italic;
+  font-weight  : normal;
+  font-size    : 14px;
+  line-height  : 18px;
+  color        : #000000;
+  padding      : 0 0 0 15px;
 }
 
 .reviews-text::before {
   content     : "";
   border      : 15px solid transparent;
-  border-right: 15px solid #ccc;
-  position    : absolute;
-  top         : 20px;
-  left        : -30px;
+  border-right: 15px solid #EBEBEB;
+  ;
+  position: absolute;
+  top     : 20px;
+  left    : -30px;
 }
 
 .reviews-link {
