@@ -318,3 +318,20 @@
     align-items: center;
     color      : #989898;
 }
+
+.buy_it_now {
+    padding   : 45px 137px 36px 145px;
+    box-sizing: border-box;
+}
+
+.buy {
+    margin     : 0 0 26px 0;
+    font-weight: 400;
+}
+
+.price-block {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    border         : 1px solid green;
+}
