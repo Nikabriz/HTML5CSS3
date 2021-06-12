@@ -606,6 +606,48 @@ textarea:-ms-input-placeholder {
     color           : #445162;
 }
 
+.сontact-details {
+    width     : 240px;
+    margin    : 0;
+    box-sizing: border-box;
+    color     : #ffffff;
+}
+
+.сontact-details-link {
+    display    : block;
+    margin     : 0 0 20px 0;
+    padding    : 0 0 0 30px;
+    position   : relative;
+    font-family: Arial;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 16px;
+    line-height: 24px;
+    align-items: center;
+    color      : #FFFFFF;
+    text-align : left;
+}
+
+.сontact-details-icons {
+    display        : flex;
+    justify-content: space-between;
+    box-sizing     : border-box;
+}
+
+.fa-2x {
+    display         : block;
+    width           : 51px;
+    height          : 51px;
+    box-sizing      : border-box;
+    color           : #445161;
+    background-color: #ffffff;
+    border-radius   : 50%;
+    display         : flex;
+    justify-content : space-between;
+    margin          : 0;
+    padding         : 8px;
+}
+
 
 
 
