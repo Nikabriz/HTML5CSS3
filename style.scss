@@ -426,7 +426,7 @@
 
 .link-btn:hover {
     color           : #FFFFFF;
-    background-color: #65757c;
+    background-color: rgb(133, 183, 202);
 }
 
 .link-btn:active {
@@ -582,6 +582,29 @@ textarea:-ms-input-placeholder {
     color      : #445162;
 }
 
+.main-contacts-form input[type="submit"] {
+    border-radius : 5px;
+    width         : 143px;
+    height        : 43px;
+    font-family   : Arial;
+    font-weight   : bold;
+    font-size     : 16px;
+    line-height   : 24px;
+    align-items   : center;
+    text-transform: uppercase;
+    outline       : none;
+    color         : #445162;
+}
+
+.main-contacts-form input[type="submit"]:hover {
+    background-color: rgb(133, 183, 202);
+    color           : white;
+}
+
+.main-contacts-form input[type="submit"]:active {
+    background-color: #ffffff;
+    color           : #445162;
+}
 
 
 
