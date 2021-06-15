@@ -65,7 +65,7 @@
 .page-header-pic {
   display: block;
   width: 472px;
-  height: 217px;
+  min-height: 217px;
   background-color: #fff;
   color: #000;
   float: right;
@@ -260,25 +260,34 @@
 
 /*reviews*/
 .reviews {
-  padding: 25px 50px 20px 50px;
+  padding: 50px;
+  padding-bottom: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
   background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.reviews:after {
-  content: "";
+.reviews-title {
   display: block;
   width: 100%;
-  clear: both;
+  margin: 0 0 20px 0;
+  text-align: center;
 }
 
-.rev {
-  margin: 0 0 29px 0;
-  font-weight: 400;
-}
-
-.reviews-about {
+.reviews-item {
+  width: 48%;
+  margin: 0 0 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,72 +296,40 @@
           justify-content: space-between;
 }
 
-.reviews-img {
-  width: 66px;
-  height: 66px;
-  background-color: #445161;
+.reviews-item-photo {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 15px 0 0;
-  position: relative;
-}
-
-.reviews-img::before {
-  position: absolute;
-  top: 5px;
-  left: -30px;
+  background-color: #445161;
 }
 
 .reviews-item-txt {
-  width: 50%;
+  width: 80%;
   margin: 0;
+  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.reviews-item-txt p {
-  margin: 0 0 22px 0;
-}
-
-.reviews-text {
-  width: 453px;
-  height: 121px;
-  margin-left: 50px;
-  background-color: #EBEBEB;
-  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  background: #EBEBEB;
   position: relative;
-  font-family: Roboto;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  padding: 0 0 0 15px;
 }
 
-.reviews-text::before {
+.reviews-item-txt:before {
   content: "";
-  border: 15px solid transparent;
-  border-right: 15px solid #EBEBEB;
+  display: block;
+  border: 13px solid transparent;
+  border-right: 13px solid #EBEBEB;
   position: absolute;
-  top: 20px;
-  left: -30px;
+  top: 27px;
+  left: -26px;
 }
 
-.reviews-link {
-  font-family: Roboto;
-  font-style: italic;
-  font-weight: normal;
+.reviews-item-txt-author {
+  display: block;
+  margin: 5px 0 0 0;
   font-size: 14px;
   line-height: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #989898;
 }
 
