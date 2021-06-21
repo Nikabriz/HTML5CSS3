@@ -193,7 +193,7 @@
 }
 
 .block-site {
-  padding: 25px 42px 30px 20px;
+  padding: 25px 42px 30px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -210,10 +210,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .screenshots-item {
-  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   margin: 0 0 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -230,7 +234,7 @@
 
 .screenshots-photo {
   display: block;
-  margin: 0 13px 0 30px;
+  margin: 0 13px 0 20px;
   background-color: #445161;
   color: white;
 }
